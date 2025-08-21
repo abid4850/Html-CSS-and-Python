@@ -1,0 +1,39 @@
+div {
+    height: 100px;
+    width:  100px;
+    background-color: aqua;
+    border: 2px solid black;
+    display: inline-block;
+}
+#box1 {
+    position: static;
+    background-color: lightblue;
+    background-image: url('image/harn.jpg');
+    background-size: cover;
+}
+#box2 {
+    position: relative;
+    background-color: lightgreen;
+    background-image: url('image/bird.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 150px;
+    left: 30px;
+    z-index: 1; /* This will ensure box2 is above box1 */
+}
+#box3 {
+    position: sticky;
+    background-color: lightcoral;
+    background-image: url('image/parat.jpg');
+    background-size: auto;
+
+    top: 0px;
+    left: 10px;
+}
+#box4 {
+    position: fixed;
+    background-color: lightgoldenrodyellow;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
